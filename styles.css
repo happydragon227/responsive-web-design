@@ -1,0 +1,299 @@
+/* 
+    I got how to change interface elements for different screen sizes from this website:
+    https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+
+    I got how to create button from this website:
+    https://www.w3schools.com/tags/tag_button.asp
+
+    I got how to do the shaddow and click effect of the button from this website:
+    https://www.w3schools.com/css/css3_buttons.asp
+
+    I got how to do the drop down menu from this website:
+    https://www.w3schools.com/howto/howto_css_dropdown.asp
+
+
+*/
+
+
+* {
+    margin: 0;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    margin: 80px;
+    /* max-width: 1100px; */
+    background-color: #F0F4F4;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 80px auto;
+    padding: 85px;
+    max-width: 1100px;
+    /* height: 600px; */
+    background-color: rgb(255, 255, 255);
+}
+
+.header {
+    margin: 40px;
+    text-align: center;
+}
+
+.img1 {
+    height: 10rem;
+    /* width: 316px; */
+    margin: auto;
+}
+
+.topNav {
+    display: inline-block;
+    margin: 50px 0;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 3px solid #757577;
+}
+
+.button1:hover {
+    background-color: #757577;
+    color: white;
+}
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 3px solid #4CAF50;
+}
+
+.button2:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button:active {
+    color: black; 
+}
+
+.page {
+    display: flex;
+    margin: 100px 0 150px 0;
+}
+
+.img2 {
+    height: 45%;
+    width: 45%;
+}
+
+.text {
+    margin: 0 0 0 100px;
+
+}
+
+.title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.paragraph {
+    font-size: 35px;
+    text-align: justify;
+}
+
+.dropdown {
+    display: none;
+}
+
+.mobiledropdown {
+    display: none;
+}
+
+.address {
+    float: left;
+}
+
+.mobiletitle {
+    display: none;
+}
+
+.mobiletext {
+    display: none;
+}
+
+
+@media only screen and (max-device-width: 1024px) {
+    .hide1{
+        display: none;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #757577;
+        color: white;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    body {
+        margin: 0px auto;
+        background-color: #F0F4F4;
+    }
+    .main {
+        margin: 0px;
+        background-color: rgb(255, 255, 255);
+    }
+    .img2 {
+        height: 40%;
+        width: 40%;
+    }
+
+    #b9 {
+        padding: 4px 42px;
+    }
+
+    a {
+        background-color: white;
+        border: 2px solid #757577;
+    }
+}
+
+@media only screen and (max-device-width: 400px) {
+    .main {
+        padding: 0 17px;
+    }
+    .header {
+        margin: 150px 40px 40px 40px;
+    }
+    .topNav {
+        margin: 80px 0 50px 0;
+    }
+    .img2 {
+        height: 80%;
+        width: 100%;
+    }
+    .img1 {
+        height: 70%;
+    }
+    .hide2 {
+        display: none;
+    }
+    .dropdown {
+        display: none;
+    }
+    .dropdown-content a:hover {
+        color: black;
+    }
+    
+    .mobiledropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .mobiledropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    a {
+        font-size: 40px;
+        background-color: #757577;
+        border: 1px solid white;
+    }
+
+    #special {
+        background-color: #4CAF50;
+    }
+
+    .button1 {
+        background-color: #757577;
+        color: white;
+        border: 7px solid #757577;
+        padding: 8px 60px;
+        box-shadow: 0 16px 32px 0 rgba(0,0,0,0.4), 0 12px 40px 0 rgba(0,0,0,0.38);
+    }
+    
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .text {
+        display: none;
+    }
+    .page{
+        margin: 50px 0 50px 0;
+        justify-content: center;
+    }
+    .mobiletitle {
+        display: block;
+        text-align: center;
+        font-size: 60px;
+    }
+    .mobiletext {
+        display: block;
+    }
+    .address {
+        width: 100%;
+        margin: 200px 0 80px 0;
+        text-align: center;
+        font-size: 30px;
+    }
+    #b10 {
+        font-size: 60px;
+    }
+}
