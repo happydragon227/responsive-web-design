@@ -217,7 +217,8 @@ body {
         width: 100%;
     }
     .img1 {
-        height: 70%;
+        height: 50%;
+        width: 600px;
     }
     .hide2 {
         display: none;
