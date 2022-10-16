@@ -144,7 +144,7 @@ body {
 }
 
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     .hide1{
         display: none;
     }
@@ -202,7 +202,7 @@ body {
     }
 }
 
-@media only screen and (max-device-width: 500px) {
+@media only screen and (max-width: 600px) {
     .main {
         padding: 0 17px;
     }
@@ -292,7 +292,7 @@ body {
         width: 100%;
         margin: 200px 0 80px 0;
         text-align: center;
-        font-size: 30px;
+        font-size: 20px;
     }
     #b10 {
         font-size: 60px;
