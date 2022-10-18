@@ -126,7 +126,7 @@ body {
     font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
     font-weight: 300;
     line-height: 1.5em;
-    font-size: 1.7em;
+    font-size: 1.5em;
     text-transform: none;
     text-decoration: none;
     letter-spacing: 1px;
@@ -154,7 +154,7 @@ body {
 }
 
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     .hide1{
         display: none;
     }
@@ -196,6 +196,7 @@ body {
     .main {
         margin: 0px;
         background-color: rgb(255, 255, 255);
+        padding: 50px;
     }
     .img2 {
         height: 40%;
@@ -212,15 +213,15 @@ body {
     }
 }
 
-@media only screen and (max-device-width: 640px) {
+@media only screen and (max-width: 640px) {
     .main {
         padding: 0 17px;
     }
     .header {
-        margin: 150px 40px 40px 40px;
+        margin: 40px 40px 40px 40px;
     }
     .topNav {
-        margin: 80px 0 50px 0;
+        margin: 40px 0 50px 0;
     }
     .img2 {
         height: 80%;
@@ -293,7 +294,7 @@ body {
     .mobiletitle {
         display: block;
         text-align: center;
-        font-size: 60px;
+        font-size: 40px;
     }
     .mobiletext {
         display: block;
@@ -303,9 +304,20 @@ body {
         width: 100%;
         margin: 200px 0 80px 0;
         text-align: center;
-        font-size: 25px;
+        font-size: 15px;
     }
     #b10 {
-        font-size: 60px;
+        font-size: 40px;
+    }
+    .paragraph {
+        font-style: italic;
+        font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        line-height: 1.5em;
+        font-size: 0.8em;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 1px;
+        text-align: justify;
     }
 }
