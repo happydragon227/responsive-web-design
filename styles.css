@@ -260,7 +260,7 @@ body {
     }
 
     a {
-        font-size: 40px;
+        font-size: 20px;
         background-color: #757577;
         border: 1px solid white;
     }
@@ -273,7 +273,7 @@ body {
         background-color: #757577;
         color: white;
         border: 7px solid #757577;
-        padding: 8px 60px;
+        padding: 8px 40px;
         box-shadow: 0 16px 32px 0 rgba(0,0,0,0.4), 0 12px 40px 0 rgba(0,0,0,0.38);
     }
     
@@ -294,7 +294,7 @@ body {
     .mobiletitle {
         display: block;
         text-align: center;
-        font-size: 40px;
+        font-size: 30px;
     }
     .mobiletext {
         display: block;
@@ -307,7 +307,7 @@ body {
         font-size: 15px;
     }
     #b10 {
-        font-size: 40px;
+        font-size: 30px;
     }
     .paragraph {
         font-style: italic;
